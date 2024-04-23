@@ -1,0 +1,34 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "0.0.0",
+  "description": "Nodejs boilerplate with eslint, prettier and husky",
+  "scripts": {
+    "format": "prettier --config ./.prettierrc --write .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darikletter/nodejs-boilerplate.git"
+  },
+  "author": "Darius Kletter <darikletter@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darikletter/nodejs-boilerplate/issues",
+    "email": "darikletter@gmail.com"
+  },
+  "homepage": "https://github.com/darikletter/nodejs-boilerplate#readme",
+  "engines": {
+    "node": "^20",
+    "npm": "^10"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
+  },
+  "lint-staged": {
+    "**/*": "prettier --config ./.prettierrc --write --ignore-unknown"
+  }
+}
