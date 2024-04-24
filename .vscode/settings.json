@@ -3,7 +3,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.workingDirectories": ["/src", "/tests"],
   "npm.exclude": ["**/dist"],
   "files.exclude": {
     "**/.git": true,

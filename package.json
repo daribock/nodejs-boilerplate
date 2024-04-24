@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Nodejs boilerplate with eslint, prettier and husky",
   "scripts": {
-    "format": "prettier --config ./.prettierrc --write .",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prettier:fix": "prettier --config ./.prettierrc.json --write .",
+    "format": "npm run prettier:fix && npm run lint:fix",
     "prepare": "husky install"
   },
   "repository": {
@@ -18,17 +21,20 @@
   },
   "homepage": "https://github.com/darikletter/nodejs-boilerplate#readme",
   "engines": {
-    "node": "^20",
+    "node": "^21",
     "npm": "^10"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5"
   },
   "lint-staged": {
-    "**/*": "prettier --config ./.prettierrc --write --ignore-unknown"
+    "**/*": "prettier --config ./.prettierrc.json --write --ignore-unknown"
   }
 }

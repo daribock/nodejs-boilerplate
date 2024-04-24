@@ -12,7 +12,7 @@ commit.
 
 ## Requirements
 
-- Node.js >= 20
+- Node.js >= 21
 - npm >= 10
 
 ## Installation
@@ -28,13 +28,6 @@ Simply copy the files from this project template to your Node.js project.
 ```bash
 cp -R /path-to-template/* /path-to-your-project/
 ```
-
-## Configurations
-
-**ESLint:** Configuration is in the .eslintrc.js file. Customize as needed.
-**Prettier:** Configuration in the .prettierrc file. Modify as necessary.
-**Husky:** Pre-configured to run linters before commit. Configuration in .husky
-directory
 
 ## Notes
 

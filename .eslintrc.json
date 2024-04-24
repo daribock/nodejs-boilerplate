@@ -1,0 +1,22 @@
+{
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "unknown",
+          "object",
+          "parent",
+          "sibling",
+          "index"
+        ]
+      }
+    ]
+  }
+}

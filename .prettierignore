@@ -31,3 +31,6 @@ coverage
 
 .devcontainer
 **/.devcontainer
+
+# docs
+CHANGELOG.md
